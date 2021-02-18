@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src={{lense.LenseImage}} alt="Card LenseImage cap">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">
+          {{ lense.type }} <br>
+          {{ lense.LensePrice | currency: "ILS" }}
+        </p>
+      <a routerLink='/numbers' (click)="pushLense(lense)" class="btn btn-primary">Go To Numbers</a>
+    </div>
+  </div>
+

@@ -1,0 +1,36 @@
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input #firstName type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input #lastName type="text" class="form-control" id="lastName" placeholder="Enter Last Name">
+    </div>
+    <div class="form-group">
+        <label for="leftCylinder">Left Cylinder :</label>
+        <input #leftCylinder type="text" class="form-control" id="leftCylinder" placeholder="Enter Left Cylinder">
+    </div>
+    <div class="form-group">
+        <label for="rightCylinder">Right Cylinder :</label>
+        <input #rightCylinder type="text" class="form-control" id="rightCylinder" placeholder="Enter Right Cylinder">
+    </div>
+    <div class="form-group">
+        <label for="leftLense">Left Lense:</label>
+        <input #leftLense type="text" class="form-control" id="leftLense" placeholder="Enter Left Lense">
+    </div>
+    <div class="form-group">
+        <label for="rightLense">Right Lense:</label>
+        <input #rightLense type="text" class="form-control" id="rightLense" placeholder="Enter Right Lense">
+    </div>
+    <button 
+    (click)=
+    "submitOrder(firstName.value,
+                lastName.value,
+                leftCylinder.value,
+                rightCylinder.value,
+                leftLense.value,
+                rightLense.value)" 
+     class="btn btn-primary"
+     routerLink='/order'
+    >Submit</button>
+

@@ -1,0 +1,12 @@
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src={{frame.FrameImage}} alt="Card FrameImage cap">
+    <div class="card-body">
+      <h5 class="card-title"></h5>
+      <p class="card-text">
+          {{ frame.color }} <br>
+          {{ frame.width }} <br>
+          {{ frame.FramePrice | currency: "ILS" }}
+        </p>
+      <a routerLink="lenses" (click)="pushFrame(frame)" class="btn btn-primary">Go To Lenses</a>
+    </div>
+  </div>

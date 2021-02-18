@@ -1,0 +1,26 @@
+<div class="card" style="width: 50%">
+    <h5 class="card-title">{{OrderInformation.name}}</h5>
+    <img src={{OrderInformation.FrameImage}} class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">
+        {{OrderInformation.color}} <br>
+        {{OrderInformation.width}} <br>
+        {{OrderInformation.framePrice | currency: "ILS"}}
+        </p>
+    </div>
+    <img src={{OrderInformation.LenseImage}} class="card-img-top" alt="...">
+    <div class="card-body">
+        <p class="card-text">
+          {{OrderInformation.type}} <br>
+          {{OrderInformation.lensePrice | currency: "ILS"}}
+          </p>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+           Left Cylinder: {{OrderInformation.leftCylinder}} <br>
+           Right Cylinder: {{OrderInformation.rightCylinder}} <br>
+           Left Lense: {{OrderInformation.leftLense}} <br>
+           Right Lense: {{OrderInformation.rightLense}} <br>
+        </p>
+      </div>
+  </div>
